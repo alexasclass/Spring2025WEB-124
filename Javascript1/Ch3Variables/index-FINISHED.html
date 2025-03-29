@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scoped CSS Variables and JS</title>
+  <link rel="icon" href="https://fav.farm/✅"/>
+  <link rel="stylesheet" href="style.css">
+  <!-- Leticia Martinez 03-25-2025 -->
+   <!-- Adapted from video tutorial in canvas,
+    http://javascript30.com
+    Scoped CSS Variables and JS -->
+
+    <!-- New attribute: data-sizing,
+     type= "range" , type= "color"-->
+</head>
+<body>
+  <div id="outerwrapper">
+  <h2>Update CSS Variables with <span class='hl'>JS</span></h2>
+  <!-- Change id="spacing" type="range"
+   name=" spacing" min="10" max="200"
+   value="10" data-sizing="px" >-->
+
+  <div class="controls">
+    <label for="spacing">Spacing:</label>
+    <input id="spacing" type="range" name="spacing" min="1" max="10" value="1">
+
+    <label for="blur">Blur:</label>
+    <input id="blur" type="range" name="blur" min="0" max="25" value="10">
+
+    <label for="base">Base Color</label>
+    <input id="base" type="color" name="base" value="#ffc600">
+  </div>
+
+  <!-- <img src="https://source.unsplash.com/7bwQXzbF6KE/800x500"> -->
+  <img src="WebTech.jpg" alt="WebTech">
+
+
+ 
+
+ 
+
+  <script src="index.js"></script>
+
+</body>
+</html>

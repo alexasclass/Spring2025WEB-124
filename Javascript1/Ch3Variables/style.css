@@ -1,0 +1,45 @@
+ /* Leticia Martinez 03-25-2025  
+    Adapted from video tutorial in canvas,
+    new properties: CSS Variables
+    new css functions: var
+*/
+
+/* explenation of root
+:root selector targets the document's root elements.
+The <html> element in HTML documents is represented by the :root selector.
+We use:root in everypage in  one of my other classes,
+ Miss White uses roots in everysingle page */
+:root {
+
+--base:rgb(255,198,0);
+--spacing: 10%;
+--blur: 1.5%;
+}
+/* I am adding a picture from my previous assigments */
+/* I changed blurred to a 0px */
+img {
+    padding: var(--spacing);
+    background: var(--base);
+    filter: blur(var(--blur));
+    /* I changed max-wide:100% */
+    max-width: 100%;
+}
+.hl {
+    color: var(--base);
+  }
+    body{
+    text-align: center;
+    background: #193549;
+    color: white;
+    font-family: 'helvetica neue', sans-serif;
+    font-weight: 100;
+    font-size: 50px;
+  }
+
+  .controls {
+    margin-bottom: 50px;
+  }
+
+  input {
+    width: 100px;
+  }
