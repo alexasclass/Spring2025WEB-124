@@ -1,0 +1,82 @@
+/*Leticia Martinez 04-08-25-->
+<!--Adapted from htttps://javascript30.com/JS + CSS Clock,
+ some changes I did on my own from what i learned in previous classes*/
+
+html {
+    /* background: #018DED url(https://unsplash.it/1500/1000?image=881&blur=5); */
+    /*I change the background color*/
+    background-color: rgb(78, 121, 170);
+    background-size: cover;
+    font-family: 'helvetica neue';
+    text-align: center;
+    font-size: 10px;
+  }
+
+  body {
+    margin: 0;
+    font-size: 2rem;
+
+    /*I also remove the following*/
+    /* display: flex; 
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+    */
+  }
+/* here is what I change the class for an Id*/
+  #clock {
+    width: 30rem;
+    height: 30rem;
+    border: 20px solid white;
+    border-radius: 50%;
+    margin: 50px auto;
+    position: relative;
+    padding: 2rem;
+}
+/*I also remove this section from de id clock*/
+     /*box-shadow:
+
+      0 0 0 4px rgba(0,0,0,0.1), 
+      inset 0 0 0 3px #EFEFEF,
+      inset 0 0 10px black,
+      0 0 10px rgba(0,0,0,0.2);
+      */
+  
+
+  #clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px); 
+    /* account for the height of the clock hands */
+  }
+
+  .hand {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+  /* change the color in all 3 hands*/
+  #hour-hand {
+    background-color: #000;
+    height: 20px;
+  }
+  #min-hand {
+    background-color:#fff;
+    height: 10px;
+
+  }
+  #second-hand {
+    background-color: #000;
+    height: 5px;
+}
+/* I added style to the digitalTime*/
+#digitalTime {
+    font-size: 30px;
+    text-transform: capitalize;
+    color: azure;
+}
