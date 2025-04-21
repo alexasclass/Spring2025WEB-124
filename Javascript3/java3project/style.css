@@ -1,0 +1,61 @@
+/*Leticia Martinez 04-20-2025 -->
+ adapted from http://javascript30.com 
+ including CSS and JS */
+
+html {
+  font-size: 10px;
+  background: url('./background.jpg') bottom center;
+  background-size: cover;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.keys {
+  display: flex;
+  flex: 1;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.key {
+  /* I channge the border to a 5px */
+  border: 5px solid black;
+  border-radius: .5rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem .5rem;
+  /* I change the transition tofrom 0.07 to a 0.09 
+  and remove ease for animation*/
+  transition: all .09s ease;
+  /* I change width from 10rem to a 100px */
+  width: 100px; 
+  text-align: center;
+  color: white;
+  background: rgba(0,0,0,0.4);
+  text-shadow: 0 0 .5rem black;
+}
+
+.playing {
+  /* I change the scale from 1.1 to 2 */
+  transform: scale(2);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+}
+
+kbd {
+  display: block;
+  /* I change font size to a 10px */
+  font-size: 10px;
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #ffc600;
+}
